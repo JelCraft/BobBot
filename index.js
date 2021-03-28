@@ -177,7 +177,8 @@ bot.on('message', message => {
 					{ name: "Nich:", value: "https://twitch.tv/ncho_halfboi \n https://www.youtube.com/channel/UCweOojBXB0bfekFa9As__4w", inline: true },
 					{ name: "Sponk:", value: "https://twitch.tv/sponkar", inline: true },
 					{ name: "Jel:", value: "https://www.youtube.com/channel/UCPMxvfpYkJoDlFjdV1HELJg", incline: true },
-					{ name: "Sneezer:", value: "https://www.youtube.com/channel/UCgMRZT8LTQFLNNAxHknwRYw", incline: true }
+					{ name: "Sneezer:", value: "https://www.youtube.com/channel/UCgMRZT8LTQFLNNAxHknwRYw", incline: true },
+					{ name: "DisguisedError:", value: "https://twitch.tv/disguisederror", incline: true }
 				]
 			}
 		});
