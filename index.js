@@ -189,6 +189,11 @@ bot.on('message', message => {
 
 	if (command === 'berry') {
 		message.channel.send("https://media.discordapp.net/attachments/699574631476101180/825507167523307571/unknown.png")
+	}
+
+	if (command === 'pog') {
+		message.channel.send("<:pogfrog:825503557427920927>")
+		message.react("<:pogfrog:825503557427920927>")
     }
     //END OF CODE   
 });
