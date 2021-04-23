@@ -18,12 +18,12 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     //split bot prefix. Using old method cuz lazy
-    const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
+	const args = message.content.slice(prefix.length).split(/ +/);
+	const command = args.shift().toLowerCase();
 
 	//help command
 	if (command === 'help') {
-		message.channel.send(':frog: :ocean::sweat_drops::four_leaf_clover::seedling::droplet::frog:\n:fire: ***Access to the hottt help menu has been granted***:fire:\n\n- ``bob picc``: sned a froggo picc\n- ``bob fbi``: :gun:\n- ``bob social``\n- ``bob follow``\n- ``bob goal``\n- ``bob frog``\n- ``bob schedule``\n- ``bob bi``\n- ``bob lesbian``\n- ``bob trans``\n- ``bob ace``\n- ``bob enby``\n- ``bob pan``\n- ``bob genderfluid``\n- ``bob gay``\n- ``bob lurk``\n- ``bob pronouns``\n- ``bob bonk``\n- ``bob friends``\n- ``bob flush``\n- ``bob berry``\n\n:frog: :ocean::sweat_drops::four_leaf_clover::seedling::droplet::frog:');
+		message.channel.send(":frog: :ocean::sweat_drops::four_leaf_clover::seedling::droplet::frog:\n:fire: ***Access to the hottt help menu has been granted***:fire:\n\n- ``bob picc``: sned a froggo picc\n- ``bob fbi``: :gun:\n- ``bob social``\n- ``bob follow``\n- ``bob goal``\n- ``bob frog``\n- ``bob schedule``\n- ``bob bi``\n- ``bob lesbian``\n- ``bob trans``\n- ``bob ace``\n- ``bob enby``\n- ``bob pan``\n- ``bob genderfluid``\n- ``bob gay``\n- ``bob lurk``\n- ``bob pronouns``\n- ``bob bonk``\n- ``bob friends``\n- ``bob flush``\n- ``bob berry``\n- ``bob froggers`` <a:Party_frog:825503301113610241><a:froggers:825503191990796308>\n- ``bob spin`` Weee spinny boi <a:frog_spin:825504893900685333>\n- ``bob roll`` ***r o l l*** <a:frog_rotate:825504670059462687>\n\n:frog: :ocean::sweat_drops::four_leaf_clover::seedling::droplet::frog:");
 	}
 
 	//bob fbi
@@ -98,7 +98,7 @@ bot.on('message', message => {
 				color: 3066993,
 				title: "Berry streams:",
 				fields: [
-					{ name: "(Eastern Time)", value: "\n💚 Steam Sunday 12am to 2pm\n🐸 Minecraft Monday 4pm-5pm\n🌿 Thriller Thursday 11am to 1pm\n🍏 Fear Friday 11am to 1pm", inline: true },
+					{ name: "(Eastern Time)", value: "\n💚 Steam Sunday 3pm to 5pm\n🐸 Minecraft Monday 3pm to 5pm\n🌿 Thriller Thursday 11am to 1pm\n🍏 Fear Friday 11am to 1pm", inline: true },
 				]
 			}
 		});
@@ -195,7 +195,25 @@ bot.on('message', message => {
 	if (command === 'pog') {
 		message.channel.send("<:pogfrog:825503557427920927>")
 		message.react("<:pogfrog:825503557427920927>")
-    }
+	}
+
+	if (command === 'froggers') {
+		message.channel.send("<a:rainbowpepe2:825503791755034646><a:rainbowpepe:825503685768904764><a:Party_frog:825503301113610241><a:froggers:825503191990796308>")
+		message.react("<a:rainbowpepe2:825503791755034646>")
+		message.react("<a:rainbowpepe:825503685768904764>")
+		message.react("<a:Party_frog:825503301113610241>")
+		message.react("<a:froggers:825503191990796308>")
+	}
+
+	if (command === 'spin') {
+		message.channel.send("<a:frog_spin:825504893900685333>")
+		message.react("<a:frog_spin:825504893900685333>")
+	}
+
+	if (command === 'roll') {
+		message.channel.send("<a:frog_rotate:825504670059462687>")
+		message.react("<a:frog_rotate:825504670059462687>")
+	}
     //END OF CODE   
 });
 
