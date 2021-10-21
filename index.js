@@ -215,12 +215,6 @@ bot.on('message', message => {
 		message.react("<a:frog_rotate:825504670059462687>")
 	}
     //END OF CODE   
-
-	if (command === 'vscode') {
-		message.channel.send("Bobbot infrastructure has been succesfully updated!");
-		message.react("🤪");
-		message.react("🥵");
-	}
 });
 
 bot.login(process.env.BobTOKEN);
